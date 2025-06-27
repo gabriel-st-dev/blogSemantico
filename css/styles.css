@@ -192,7 +192,16 @@ footer p{
 
 /* RESPONSIVO */
 @media(max-width:450px){
+    header h2{
+        font-size: 18px;
+    }
+
+    header a{
+        font-size: 10px;
+    }
+
     .container{
         flex-wrap: wrap;
+        gap: 1.5rem;
     }
 }

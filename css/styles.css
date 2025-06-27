@@ -1,0 +1,198 @@
+/* GERAL */
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+    transition: .4s;
+}
+
+a:hover{
+    color: #c10b0b;
+}
+
+/* NAVBAR */
+
+header{
+    position: sticky;
+    top: 0;
+    background-color: #413939;
+}
+
+#navbar{
+    padding: 1.5rem 2.5rem;
+    border-bottom: 2px solid #c10b0b;
+}
+
+h2{
+    color: #fff;
+    transition: .4s;
+}
+
+h2:hover{
+    color: #c10b0b;
+    cursor: default;
+}
+
+#navbar-inner{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#nav-links{
+    display: flex;
+    gap: 1rem;
+}
+
+
+/* CONTEÚDO PRINCIPAL */
+
+body{
+    background-color: #1b1919ed;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 3rem;
+    padding: 2rem 2.5rem;
+}
+
+#posts-container{
+    flex: 3 1 0;
+}
+
+.post{
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #c10b0b;
+    padding-bottom: 1rem;
+}
+
+.post img{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+
+.title,
+.description,
+.author{
+
+    margin-bottom: 1rem;
+
+}
+
+.title{
+    font-size: 2rem;
+}
+
+.description{
+    color: #fff;
+}
+
+.author{
+    color: #c10b0b;
+    font-weight: bold;
+}
+
+/* BARRA LATERAL */
+#sidebar{
+    flex: 1 1 0;
+}
+
+#search-bar,
+#categories,
+#tags{
+    padding: 1.5rem;
+    border: 1px solid #c10b0b;
+    margin-bottom: 1rem;
+    background-color: #413939;
+
+}
+
+#search-bar h4,
+#categories h4,
+#tags h4{
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+    color: #fff;
+
+}
+
+#search-bar form{
+    display: flex;
+}
+
+#search-bar input{
+    padding: .5rem 1rem;
+    border: 1px solid #c10b0b;
+}
+
+#search-bar input[type="text"]{
+    color: #c10b0b;
+}
+
+#search-bar input[type="submit"]{
+    cursor: pointer;
+    background-color: #c10b0b;
+    color: #fff;
+    border: none;
+}
+
+#categories li{
+    margin-bottom: 1rem;
+}
+
+#tags-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+
+
+#tags-container a{
+    background-color: #c10b0b;
+    padding: .5rem .7rem;
+    border-radius: .3rem;
+
+}
+
+#tags-container a:hover{
+    color: #000;
+}
+
+/* RODAPÉ */
+
+footer{
+    border-top: 2px solid #c10b0b;
+    padding: 3rem;
+    text-align: center;
+    background-color: #413939;
+}
+
+footer h2,
+footer p{
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+/* RESPONSIVO */
+@media(max-width:450px){
+    .container{
+        flex-wrap: wrap;
+    }
+}

@@ -204,4 +204,11 @@ footer p{
         flex-wrap: wrap;
         gap: 1.5rem;
     }
+    
+    #search-bar,
+    #categories,
+    #tags{
+        padding: .8rem;
+        margin-bottom: 1rem;
+}
 }

@@ -102,6 +102,7 @@ body{
 
 .description{
     color: #fff;
+    text-align: justify;
 }
 
 .author{
